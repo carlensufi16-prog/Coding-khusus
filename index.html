@@ -45,7 +45,31 @@
       50% { background-position: 100% 50%; }
       100% { background-position: 0% 50%; }
     }
+    .music-player {
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 3;
+      background: rgba(255,255,255,0.9);
+      border-radius: 20px;
+      padding: 10px 20px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
 
+    .music-player audio {
+      width: 200px;
+      height: 30px;
+    }
+
+    .music-player label {
+      font-size: 0.9rem;
+      color: var(--text);
+      font-weight: 500;
+    }
     /* ---------- CARD ---------- */
     .card {
       background: rgba(255,255,255,0.95);
@@ -397,7 +421,9 @@
   </script>
 
 </body>
-<audio controls autoplay>
-        <source src="KODE HBD/Kasih - Aera.mp3" type="audio/mp3">
-    </audio>
+<div class="music-player">
+    <label for="audio">🎵 PLAY INI YAA:</label>
+    <audio id="audio" controls autoplay loop>
+      <source src="KODE HBD/Kasih - Aera.mp3" type="audio/mp3">
+  </div>
 </html>
