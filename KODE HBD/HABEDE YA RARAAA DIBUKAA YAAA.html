@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Safra - 16 Tahun!</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #4facfe 75%, #00f2fe 100%);
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+            min-height: 100vh;
+        }
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .container {
+            max-width: 700px;
+            margin: 30px auto;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+        }
+        h1 {
+            font-size: 3.5em;
+            color: #ff006e;
+            animation: bounce 1.5s ease-in-out infinite;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(255, 0, 110, 0.2);
+        }
+        .subtitle {
+            font-size: 1.8em;
+            color: #e938ec;
+            margin-bottom: 20px;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+        .cake {
+            width: 200px;
+            height: 150px;
+            background: linear-gradient(135deg, #ffd89b 0%, #19547b 100%);
+            margin: 25px auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            animation: pulse 2s ease-in-out infinite;
+            position: relative;
+        }
+        .cake::before {
+            content: '🎂';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 4em;
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+        .message {
+            font-size: 1.3em;
+            line-height: 1.8;
+            margin: 25px 0;
+            color: #333;
+            text-align: justify;
+        }
+        .doa {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 25px 0;
+            font-size: 1.1em;
+            line-height: 1.8;
+            font-style: italic;
+            box-shadow: 0 5px 15px rgba(245, 87, 108, 0.3);
+        }
+        .doa strong {
+            display: block;
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            font-style: normal;
+        }
+        .signature {
+            font-style: italic;
+            font-size: 1.2em;
+            margin-top: 30px;
+            color: #667eea;
+            font-weight: bold;
+        }
+        .date {
+            font-size: 0.9em;
+            color: #999;
+            margin-top: 5px;
+        }
+        /* Confetti Styles */
+        .confetti-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+        .confetti {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: #ff006e;
+            animation: fall 4s linear infinite;
+        }
+        .confetti.color1 { background: #ff006e; }
+        .confetti.color2 { background: #8338ec; }
+        .confetti.color3 { background: #ffbe0b; }
+        .confetti.color4 { background: #fb5607; }
+        .confetti.color5 { background: #3a86ff; }
+        .confetti.color6 { background: #06ffa5; }
+        @keyframes fall {
+            to {
+                transform: translateY(100vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <audio controls autoplay>
+        <source src="lagu/Kasih - Aera.mp3" type="audio/mp3">
+    </audio>
+    <div class="confetti-container" id="confettiContainer"></div>
+    
+    <div class="container">
+        <h1>🎉 Happy Birthday! 🎉</h1>
+        <div class="subtitle">Safra Naziha Putri</div>
+        
+        <div class="cake"></div>
+        <div class="message">
+            <strong>Selamat ulang tahun yang ke-16, Safra Naziha Putri!</strong> 🌟
+            <br><br>
+                       مبروك الف مبروك عليك مبروك مبروك الف مبروك يوم ميلادك مبروك
+            <br><br> 
+            Hari ini, 16 Januari 2026, kamu resmi melangkah ke usia 16 tahun. Semoga setiap langkahmu selalu dipenuhi hal-hal baik, semogaa sehat selaluu, dilancarkan rezekinya, dicapaikan impiannyaa dan jugaaa semakin bertambahnya umur semakin bertambah keberkahan dari Allah, dan semoga menjadi alasan sederhana bagi banyak orang untuk senang. Tetap jadi Rara yang baik, tulus, dan penuh cahaya.
+            <br><br>
+           Di usia 16 tahun ini, kamu terus bertumbuh menjadi pribadi yang luar biasa, cerdas, dan penuh potensi. Usia ini bukan hanya tentang bertambahnya angka, tetapi tentang tumbuhnya mimpi, keberanian, dan harapan baru. Semoga setiap proses yang kamu jalani hari ini mengantarkanmu menuju masa depan yang indah dan kamu impikan.
+        </div>
+
+        
+        <div class="doa">
+            <strong>🤲 Doa Istimewa untuk Safra 🤲</strong>
+           اللّٰهُمَّ فِي يَوْمِ زِيَادَةِ عُمْرِهَا إِلَى سِتَّ عَشْرَةَ سَنَةً نَسْأَلُكَ أَنْ تَحْفَظَ صَفْرَا نَازِيْهَا بِرَحْمَتِكَ، وَأَنْ تَرْزُقَهَا صِحَّةً فِي الْجَسَدِ، وَنُوْرًا فِي الْقَلْبِ، وَحِكْمَةً فِي الْعَقْلِ، وَأَنْ تَجْعَلَ سِنَّ سِتَّ عَشْرَةَ سَنَةً سِنَّ خَيْرٍ وَنُمُوٍّ وَبَرَكَةٍ، وَإِنْ تَعَسَّرَتْ خُطَاهَا فَيَسِّرْهَا، وَإِنْ ضَاقَ قَلْبُهَا فَوَسِّعْهُ، وَإِنْ تَأَخَّرَتْ أَمَانِيْهَا فَثَبِّتْ يَقِيْنَهَا بِكَ، وَاجْعَلْهَا يَا اللّٰهُ شَخْصًا نَافِعًا لِنَفْسِهَا وَلِمَنْ حَوْلَهَا، وَاخْتِمْ أَيَّامَهَا دَائِمًا بِالْخَيْرِ، آمِيْن يَا رَبَّ الْعَالَمِيْن.
+            <br><br>
+            “Ya Allah, di hari bertambahnya usia Safra Naziha Putri menjadi 16 tahun, kami memohon kepada-Mu agar Engkau senantiasa menjaganya dengan rahmat-Mu. Berikanlah ia kesehatan pada tubuhnya, cahaya dalam hatinya, dan kebijaksanaan dalam pikirannya. Jadikan usia 16 tahun ini sebagai usia yang penuh kebaikan, pertumbuhan, dan keberkahan. Jika langkah Safra Naziha Putri terasa berat, maka mudahkanlah. Jika hatinya terasa sempit, maka lapangkanlah. Jika harapannya tertunda, maka kuatkanlah keyakinannya kepada-Mu. Jadikanlah ia pribadi yang bermanfaat bagi dirinya sendiri dan bagi orang-orang di sekitarnya, serta tutuplah hari-harinya selalu dengan kebaikan. Aamiin ya Rabbal ‘alamin.”
+        </div>
+        
+        <div class="signature">
+            Created by: MPCSF
+            <div class="date">16 Januari 2026</div>
+        </div>
+    </div>
+
+    <script>
+        // Generate Confetti
+        const confettiContainer = document.getElementById('confettiContainer');
+        const colors = ['color1', 'color2', 'color3', 'color4', 'color5', 'color6'];
+        
+        function createConfetti() {
+            const confetti = document.createElement('div');
+            confetti.classList.add('confetti', colors[Math.floor(Math.random() * colors.length)]);
+            
+            confetti.style.left = Math.random() * 100 + '%';
+            confetti.style.top = '-10px';
+            confetti.style.animation = `fall ${3 + Math.random() * 2}s linear`;
+            confetti.style.animationDelay = Math.random() * 0.5 + 's';
+            
+            confettiContainer.appendChild(confetti);
+            
+            // Remove element after animation
+            setTimeout(() => confetti.remove(), 5000);
+        }
+        
+        // Create confetti every 300ms
+        setInterval(createConfetti, 300);
+    </script>
+</body>
+</html>

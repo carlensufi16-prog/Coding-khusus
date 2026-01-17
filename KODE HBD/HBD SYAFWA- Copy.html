@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Syafwa!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(45deg, #ffffff, #ffe6e6, #f0e6e6, #e6e6ff, #ffffff); /* Background putih dengan gradien warna berjalan yang halus */
+            background-size: 400% 400%;
+            animation: gradientShift 8s ease infinite; /* Animasi warna berjalan pada background */
+            color: #800000; /* Merah maroon */
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+            overflow: hidden; /* Untuk confetti */
+        }
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            25% { background-position: 100% 50%; }
+            50% { background-position: 100% 100%; }
+            75% { background-position: 0% 100%; }
+            100% { background-position: 0% 50%; }
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            animation: fadeIn 2s ease-in-out; /* Animasi fade in untuk container */
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        h1 {
+            font-size: 3em;
+            color: #800000;
+            margin-bottom: 20px;
+            animation: bounce 1s ease-in-out; /* Animasi bounce untuk judul */
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #800000;
+            animation: slideIn 1.5s ease-in-out; /* Animasi slide in untuk paragraf */
+        }
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(-20px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        .confetti {
+            font-size: 2em;
+            margin: 20px 0;
+            animation: confettiFall 3s linear infinite; /* Animasi confetti jatuh */
+        }
+        @keyframes confettiFall {
+            0% { transform: translateY(-100px) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
+        }
+        .prayer-box {
+            background-color: #f8f8f8; /* Kotak khusus doa dengan background abu-abu muda */
+            border: 2px solid #800000; /* Border merah maroon */
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            animation: pulse 2s ease-in-out infinite; /* Animasi pulse untuk kotak doa */
+            display: none; /* Sembunyikan secara default */
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+            100% { transform: scale(1); }
+        }
+        .prayer-box p {
+            font-style: italic;
+            font-size: 1.1em;
+            color: #800000;
+        }
+        .prayer-button {
+            background-color: #800000; /* Merah maroon */
+            color: #ffffff; /* Putih */
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.1em;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 20px 0;
+            transition: background-color 0.3s ease; /* Transisi untuk hover */
+        }
+        .prayer-button:hover {
+            background-color: #a00000; /* Merah maroon lebih gelap saat hover */
+        }
+        .signature {
+            font-style: italic;
+            margin-top: 30px;
+            font-size: 1.1em;
+            animation: fadeIn 2s ease-in-out 1s both; /* Animasi fade in tertunda untuk signature */
+        }
+        /* Confetti particles */
+        .confetti-particle {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #ff69b4; /* Pink */
+            animation: fall 5s linear infinite;
+        }
+        .confetti-particle:nth-child(2n) {
+            background-color: #ffd700; /* Gold */
+            animation-delay: 1s;
+        }
+        .confetti-particle:nth-child(3n) {
+            background-color: #00ff00; /* Green */
+            animation-delay: 2s;
+        }
+        @keyframes fall {
+            0% { top: -10px; left: 50%; opacity: 1; }
+            100% { top: 100vh; left: calc(50% + 100px); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Confetti particles -->
+    <div class="confetti-particle"></div>
+    <div class="confetti-particle"></div>
+    <div class="confetti-particle"></div>
+    <div class="confetti-particle"></div>
+    <div class="confetti-particle"></div>
+    <div class="confetti-particle"></div>
+    <div class="confetti-particle"></div>
+    <div class="confetti-particle"></div>
+    <div class="confetti-particle"></div>
+    <div class="confetti-particle"></div>
+
+    <div class="container">
+        <h1>🎉 Selamat Ulang Tahun, Syafwa Alliya Shaum! 🎉</h1>
+        <div class="confetti">🎊✨🎈🎂🎁</div>
+        <p>Hari ini, 29 Agustus 2026, kamu genap berusia 16 tahun! Semoga tahun ini penuh dengan kebahagiaan, petualangan baru, dan impian yang tercapai. Kamu adalah sosok yang luar biasa, penuh semangat, dan selalu membawa senyum ke sekitarmu.</p>
+        <p>Semoga Allah SWT selalu melimpahkan berkah, kesehatan, dan kesuksesan dalam setiap langkahmu. Jadilah versi terbaik dirimu, dan teruslah bersinar seperti bintang di langit.</p>
+        
+        <!-- Tombol untuk menampilkan doa -->
+        <button class="prayer-button" onclick="togglePrayer()">Baca Doa Khusus</button>
+        
+        <!-- Kotak Khusus Doa -->
+        <div class="prayer-box" id="prayerBox">
+            <p><strong>Doa Khusus untuk Syafwa Alliya Shaum:</strong></p>
+            <p>Ya Allah, pada hari ulang tahunnya yang ke-16 ini, limpahkanlah rahmat dan berkah-Mu yang melimpah kepada Syafwa Alliya Shaum. Berikanlah dia kesehatan jasmani dan rohani, kekuatan untuk menghadapi tantangan hidup, kebijaksanaan dalam setiap keputusan, dan kesuksesan dalam pendidikan serta kariernya. Lindungilah dia dari segala marabahaya, bahaya dunia dan akhirat, serta jadikanlah dia hamba-Mu yang shaleh dan shalehah. Semoga dia selalu dikelilingi oleh orang-orang yang mencintai dan mendukungnya, dan semoga hidupnya penuh dengan kebahagiaan, cinta, dan kedamaian. Amin ya Rabbal Alamin.</p>
+        </div>
+        
+        <div class="signature">
+            Dari: Mahaputra Carlen Sufi
+        </div>
+    </div>
+
+    <script>
+        // Fungsi untuk toggle kotak doa
+        function togglePrayer() {
+            const prayerBox = document.getElementById('prayerBox');
+            if (prayerBox.style.display === 'none' || prayerBox.style.display === '') {
+                prayerBox.style.display = 'block';
+            } else {
+                prayerBox.style.display = 'none';
+            }
+        }
+
+        // Script untuk membuat confetti lebih dinamis (opsional, tapi menambah kesan)
+        function createConfetti() {
+            const confetti = document.createElement('div');
+            confetti.className = 'confetti-particle';
+            confetti.style.left = Math.random() * 100 + 'vw';
+            confetti.style.animationDelay = Math.random() * 5 + 's';
+            document.body.appendChild(confetti);
+            setTimeout(() => {
+                confetti.remove();
+            }, 5000);
+        }
+        setInterval(createConfetti, 500); // Tambah confetti setiap 0.5 detik
+    </script>
+</body>
+</html>
