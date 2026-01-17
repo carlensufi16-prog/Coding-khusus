@@ -38,6 +38,7 @@
       animation: gradientMove 12s ease infinite;
       overflow: hidden;
       position: relative;
+      flex-direction: column;
     }
 
     @keyframes gradientMove {
@@ -45,6 +46,7 @@
       50% { background-position: 100% 50%; }
       100% { background-position: 0% 50%; }
     }
+
     .music-player {
       position: absolute;
       top: 20px;
@@ -70,6 +72,7 @@
       color: var(--text);
       font-weight: 500;
     }
+
     /* ---------- CARD ---------- */
     .card {
       background: rgba(255,255,255,0.95);
@@ -81,6 +84,7 @@
       animation: popIn 1s ease forwards;
       z-index: 2;
       position: relative;
+      margin-top: 80px; /* Space for music player */
     }
 
     @keyframes popIn {
@@ -194,6 +198,16 @@
       to { opacity: 1; }
     }
 
+    /* ---------- SIGNATURE ---------- */
+    .signature {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      color: var(--muted);
+      font-style: italic;
+      text-align: center;
+      animation: fadeIn 2s ease;
+    }
+
     /* ---------- AKSESORIS HANGAT DAN LUCU ---------- */
     .accessories {
       position: absolute;
@@ -301,10 +315,26 @@
       .photo-grid {
         grid-template-columns: 1fr;
       }
+      .music-player {
+        top: 10px;
+        padding: 8px 15px;
+      }
+      .music-player audio {
+        width: 150px;
+      }
     }
   </style>
 </head>
 <body>
+
+  <!-- MUSIC PLAYER -->
+  <div class="music-player">
+    <label for="audio">🎵 PLAY INI YAA:</label>
+    <audio id="audio" controls autoplay loop>
+      <source src="KODE HBD/Kasih - Aera.mp3" type="audio/mp3">
+      Browser Anda tidak mendukung elemen audio.
+    </audio>
+  </div>
 
   <!-- AKSESORIS HANGAT DAN LUCU -->
   <div class="accessories">
@@ -372,10 +402,16 @@
     </div>
 
     <div class="hidden-quote" id="quote">
-      “jangan pergi ya kak, tolong tetap disini, sampai nanti kakak menemukan labuhan hati, aku masih butuh pean, aku sayang mbak aqila”
+      “jangan pergi ya mbak, tetap disini dulu, sampai nanti menemukan labuhan hati yang baru, aku masih ingin mbak disini, aku sayang mbak aqila”
     </div>
 
     <div class="custom-message" id="customMsg"></div>
+
+    <!-- SIGNATURE -->
+    <div class="signature">
+      Dari adekmu tersayang: Carlensius<br>
+      17 Januari 2026
+    </div>
   </div>
 
   <script>
@@ -421,10 +457,4 @@
   </script>
 
 </body>
-<div class="music-player">
-    <label for="audio">🎵 PLAY INI YAA:</label>
-    <audio id="audio" controls autoplay loop>
-      <source src="KODE HBD/Kasih - Aera.mp3" type="audio/mp3">
-  </div>
 </html>
-
